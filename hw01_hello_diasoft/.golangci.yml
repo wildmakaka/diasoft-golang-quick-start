@@ -7,7 +7,7 @@ run:
   modules-download-mode: vendor # [!] if you are using vendoring
   build-tags:
     - integration # [!] If you disable code for integration tests to run all unit tests, enable it to lint all the same. 
-  
+
 # [!] Linters are enabled manually. Disabled linters are commented and have comment about reason of disabling.
 # [!] Linters disabled inside source code by //nolint should be specific and comments like this
 # [!] //nolint:gocyclo // This legacy function is complex but the team too busy to simplify it.
@@ -125,7 +125,7 @@ linters-settings:
   lll:
     line-length: 110
   gci:
-    local-prefixes: <your go module>
+    local-prefixes: hw01_hello_diasoft
   forbidigo: # [!] Useful to check some code writing rules. E.g. this config contains example of using own logger instead of gloabl zap.
     forbid:
       - zap # we use our own logger that wraps zap.
