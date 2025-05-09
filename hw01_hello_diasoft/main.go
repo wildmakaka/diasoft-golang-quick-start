@@ -7,7 +7,6 @@ import (
 )
 
 func main() {
-
 	const text string = "Hello, DIASOFT!"
 	fmt.Println(reverse.String(text))
 }
